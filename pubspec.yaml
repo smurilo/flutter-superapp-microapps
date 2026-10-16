@@ -1,0 +1,15 @@
+name: superapp_workspace
+publish_to: none
+environment:
+  sdk: ^3.6.0
+
+# Dart pub workspace: one lockfile and one analysis for the shell and every micro app.
+workspace:
+  - apps/shell
+  - packages/core
+  - packages/design_system
+  - packages/micro_statement
+  - packages/micro_pix
+
+dev_dependencies:
+  lints: ^5.0.0
